@@ -27,7 +27,7 @@ namespace OOPInhertance
 
         public void Sell()
         {
-            Console.WriteLine(string.Format("Hello! My name is {0}, I want you to buy this car.",FullName));
+            Console.WriteLine(string.Format("Hello! My name is {0}, I would recommend you to buy this car.",FullName));
         }
     }
 }
