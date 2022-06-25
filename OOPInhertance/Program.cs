@@ -10,7 +10,7 @@ void App()
     Console.WriteLine(ElisaTheSalesman.FullName);
     ElisaTheSalesman.Sell();
 
-    CarSalesman ChrisTheSalesman = new CarSalesman("Iradukunda", "Chris");
+    RetailSalesman ChrisTheSalesman = new RetailSalesman("Iradukunda", "Chris");
     Console.WriteLine(ChrisTheSalesman.FullName);
     ChrisTheSalesman.Sell();
 }
