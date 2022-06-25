@@ -1,33 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace OOPInhertance
 {
-    internal class CarSalesman
+    internal class CarSalesman : Salesman
     {
-        private string _firstName;
-        private string _lastName;
-
-        public CarSalesman(string firstName, string lastName)
+        public CarSalesman(string firstName, string lastName) : base(firstName, lastName)
         {
-            _firstName = firstName;
-            _lastName = lastName;
         }
 
-        public string FullName
+        public override void Sell()
         {
-            get
-            {
-                return string.Format("{0} {1}",_firstName,_lastName);
-            }
-        }
-
-        public void Sell()
-        {
-            Console.WriteLine(string.Format("Hello! My name is {0}, I would recommend you to buy this car.",FullName));
+            throw new NotImplementedException();
         }
     }
 }
