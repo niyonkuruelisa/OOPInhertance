@@ -7,7 +7,11 @@ App();
 void App()
 {
     //  Create an instance from a class
-    CarSalesman carSalesman1 = new CarSalesman("Niyonkuru", "Elisa");
-    Console.WriteLine(carSalesman1.FullName);
-    carSalesman1.Sell();
+    CarSalesman ElisaTheSalesman = new CarSalesman("Niyonkuru", "Elisa");
+    Console.WriteLine(ElisaTheSalesman.FullName);
+    ElisaTheSalesman.Sell();
+
+    CarSalesman ChrisTheSalesman = new CarSalesman("Iradukunda", "Chris");
+    Console.WriteLine(ChrisTheSalesman.FullName);
+    ChrisTheSalesman.Sell();
 }
